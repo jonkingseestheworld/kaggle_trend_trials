@@ -1,0 +1,8 @@
+---RandomForestRegressor---
+{'bootstrap': True, 'ccp_alpha': 0.0, 'criterion': 'mse', 'max_depth': None, 'max_features': 'auto', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 29, 'verbose': 0, 'warm_start': False}---------------------------------------------
+('age', 0.17182798753075895)
+('domain1_var1', 0.14850770263900243)
+('domain1_var2', 0.14421285672123987)
+('domain2_var1', 0.18620008687088682)
+('domain2_var2', 0.18117462519157154)
+('overall-score', 0.1670650687582003)

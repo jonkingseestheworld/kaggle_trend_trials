@@ -1,0 +1,35 @@
+!train feature data are pca scores from loading & fnc seperately (5pcs in each case!)
+---gridsearch: ------------------------------
+GridSearchCV(cv=KFold(n_splits=5, random_state=29, shuffle=True),
+             estimator=RandomForestRegressor(random_state=29), n_jobs=-1,
+             param_grid={'n_estimators': [5, 10, 20]},
+             scoring='neg_mean_absolute_error', verbose=2)
+
+---best model params for each target :--------------------
+{'age': RandomForestRegressor(n_estimators=20, random_state=29), 'domain1_var1': RandomForestRegressor(n_estimators=20, random_state=29), 'domain1_var2': RandomForestRegressor(n_estimators=20, random_state=29), 'domain2_var1': RandomForestRegressor(n_estimators=20, random_state=29), 'domain2_var2': RandomForestRegressor(n_estimators=20, random_state=29)}
+
+---model CV info: 'param_n_estimators','mean_test_score'--------------------
+{'age': [masked_array(data=[5, 10, 20],
+             mask=[False, False, False],
+       fill_value='?',
+            dtype=object), array([-9.40507735, -8.990802  , -8.76495556])], 'domain1_var1': [masked_array(data=[5, 10, 20],
+             mask=[False, False, False],
+       fill_value='?',
+            dtype=object), array([-8.37094864, -8.00121652, -7.74704258])], 'domain1_var2': [masked_array(data=[5, 10, 20],
+             mask=[False, False, False],
+       fill_value='?',
+            dtype=object), array([-9.51733743, -9.07029453, -8.80053911])], 'domain2_var1': [masked_array(data=[5, 10, 20],
+             mask=[False, False, False],
+       fill_value='?',
+            dtype=object), array([-9.52910562, -9.18735673, -8.94197295])], 'domain2_var2': [masked_array(data=[5, 10, 20],
+             mask=[False, False, False],
+       fill_value='?',
+            dtype=object), array([-10.33188649,  -9.86775529,  -9.52329515])]}
+
+---------------------------------------------
+('age', 0.06797016180464376)
+('domain1_var1', 0.05779629635483965)
+('domain1_var2', 0.05760204162047615)
+('domain2_var1', 0.07255068741893919)
+('domain2_var2', 0.07106840672618339)
+('overall-score', 0.06571909916246983)
